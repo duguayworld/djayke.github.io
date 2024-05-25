@@ -18,6 +18,18 @@ header{
     color: #232323;
 }
 
-.hd{
+divrow {
+    margin: 5px;
+    width: 50px;
+    height: 150px;
+}
 
+.left {
+    float: left;
+    width:50%;
+}
+
+.right {
+    float: right;
+    width: 50%;
 }
