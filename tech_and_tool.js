@@ -9,21 +9,27 @@
     { tool1: "GNU/LINUX", tool2: "Powershell", tool3: "antlr" },
     ];
 
+    function addTableItem(text){
+        let td = document.createElement("td");
+        td.innerText = text;
+        return td;
+    }
+
     // Function to render the table
     function renderTable(data) {
-    var tbody = document.querySelector("#myTable tbody");
-    tbody.innerHTML = ""; // Clear existing tbody
+        var tbody = document.querySelector("#myTable tbody");
+        tbody.innerHTML = ""; // Clear existing tbody
 
-    data.forEach(function(row) {
-    var tr = document.createElement("tr");
-    tr.innerHTML = `
-                <td>${row.tool1}</td>
-                <td>${row.tool2}</td>
-                <td>${row.tool3}</td>
-            `;
-    tbody.appendChild(tr);
-});
-}
+        data.forEach(function(row) {
+            var tr = document.createElement("tr");
+            tr.appendChild(addTableItem(row.tool1));
+            tr.appendChild(addTableItem(row.tool2));
+            tr.appendChild(addTableItem(row.tool3));
+            tbody.appendChild(tr);
+        });
+    }
+
+
 
     // Initial rendering
     renderTable(data);

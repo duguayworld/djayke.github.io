@@ -16,9 +16,9 @@ function drawChart() {
     var options = {
         title: 'Skills',
         pieHole: 0.3,
-        backgroundColor: '#232323',
-        legendTextStyle: { color: '#e2e2e2' },
-        titleTextStyle: { color: '#e2e2e2' },
+        backgroundColor: '#DBDCE8',
+        legendTextStyle: { color: '#00224D' },
+        titleTextStyle: { color: '#00224D' },
         slices: {
             0: { color: '#FF5733' },
             1: { color: '#3498DB' }, // Java

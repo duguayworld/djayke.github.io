@@ -29,6 +29,7 @@ function createListItem(tag, text, parent, bold){
 function renderData(data){
     data.forEach(function(row){
         document.getElementById("work").appendChild(addExperience(row));
+        document.getElementById("work").appendChild(document.createElement("hr"))
     })
 }
 

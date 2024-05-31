@@ -1,27 +1,57 @@
 body {
-    background-color: #232323;
-    color: #e2e2e2;
+    background-color: ghostwhite;
+    color: #0c0c0c;
+    font-family: "Source Code Pro Semibold";
 }
 
 table {
     border-collapse: collapse;
     width: 100%;
 }
-th, td {
-    border: 1px solid black;
+
+th, td{
     padding: 8px;
-    text-align: left;
+    text-align: center;
+    background-color: #F2613F;
+    color: ghostwhite;
+    opacity: 80%;
+}
+
+tr:nth-child(even) td{
+    background-color: ghostwhite;
+    color: #F2613F;
+    opacity: 80%;
+}
+
+tr:hover td{
+    opacity: 100%;
+    background-color: #3c3c3c;
+    color: ghostwhite;
+    font-weight: bold;
 }
 
 header{
-    background-color: #e2e2e2;
-    color: #232323;
+    background-color: #3c3c3c;
+    color: ghostwhite;
 }
+
+.footer{
+    background-color: #3c3c3c;
+    color: ghostwhite;
+}
+
 
 divrow {
     margin: 5px;
     width: 50px;
     height: 150px;
+}
+
+.content{
+    max-width: 80%;
+    margin: 0 auto;
+    background-color: ghostwhite;
+    color: #00224D;
 }
 
 .left {
@@ -32,4 +62,54 @@ divrow {
 .right {
     float: right;
     width: 50%;
+}
+
+.sec {
+    background-color: #DFDFDF;
+    border-radius: 25px;
+    padding: 10px;
+}
+
+.title{
+    color: #DBDCE8;
+    font-weight: bold;
+    background-color: #3c3c3c;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-radius: 10px;
+    border: inset 0;
+}
+
+/* CSS for slideshow */
+.slideshow-container {
+    max-width: 600px;
+    position: relative;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
 }
